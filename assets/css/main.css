@@ -1,0 +1,94 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+}
+
+p, li {
+  font-size: 21px;
+  color: #333333;
+}
+
+small {
+  color: #333333;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.btn-primary {
+  font-size: 23px;
+  background-color: #ff7214;
+  color: white;
+  border-radius: 50px;
+  padding: 30px 60px;
+  text-transform: uppercase;
+  font-weight: 800;
+  box-shadow: 0 0 25px rgba(57, 255, 20, 0.5);
+  line-height: 1;
+  border: 0;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+  background-color: #ff7214;
+}
+
+header {
+  background: #233d58;
+  padding: 30px 0;
+}
+header h1 {
+  color: #fff;
+  margin-top: 0;
+}
+header h1 .mark-red {
+  background: #ff7214;
+  color: #fff;
+}
+header h2 {
+  color: #fff;
+  font-size: 23px;
+}
+header img {
+  width: 90%;
+  height: auto;
+  margin: 10px 0 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 114, 20, 0.5);
+}
+header small {
+  color: #fff;
+  font-size: 16px;
+}
+
+.second-block, .fourth-block, .third-block {
+  padding: 30px 0;
+}
+.second-block h3, .fourth-block h3, .third-block h3 {
+  margin-top: 0;
+}
+
+.third-block {
+  background: #f5f5f5;
+}
+.third-block ul {
+  padding-left: 0;
+  margin-top: 20px;
+}
+.third-block ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.third-block ul li img {
+  width: 30px;
+  margin: 0 10px 0 0;
+  float: left;
+}
+
+/*# sourceMappingURL=main.css.map */
