@@ -39,30 +39,30 @@ small {
   background-color: #ff7214;
 }
 
-header {
+header, .fifth-block {
   background: #233d58;
   padding: 30px 0;
 }
-header h1 {
+header h1, .fifth-block h1 {
   color: #fff;
   margin-top: 0;
 }
-header h1 .mark-red {
+header h1 .mark-red, .fifth-block h1 .mark-red {
   background: #ff7214;
   color: #fff;
 }
-header h2 {
+header h2, .fifth-block h2 {
   color: #fff;
   font-size: 23px;
 }
-header img {
+header img, .fifth-block img {
   width: 90%;
   height: auto;
   margin: 10px 0 10px;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(255, 114, 20, 0.5);
 }
-header small {
+header small, .fifth-block small {
   color: #fff;
   font-size: 16px;
 }
@@ -89,6 +89,34 @@ header small {
   width: 30px;
   margin: 0 10px 0 0;
   float: left;
+}
+
+.fifth-block h3 {
+  color: #fff;
+}
+.fifth-block p {
+  color: #fff;
+}
+.fifth-block .vl_pgto {
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 20px;
+}
+.fifth-block .pg_top {
+  font-size: 45px;
+  margin: 0 !important;
+}
+.fifth-block .pg_bottom {
+  font-size: 24px;
+  margin: 0;
+}
+.fifth-block .mark-red {
+  background: #ff7214;
+  color: #fff;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
