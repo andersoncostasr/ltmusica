@@ -37,7 +37,6 @@ small{
     box-shadow: 0 0 25px rgb(57 255 20 / 50%);
     line-height: 1;
     border: 0;
-    margin-bottom: 10px;
     margin-top: 20px;
     &:hover{
         opacity: 0.9;
@@ -136,3 +135,6 @@ header{
 
 }
 
+.six-block{
+    @extend .fourth-block;
+}
