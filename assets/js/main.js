@@ -1,4 +1,10 @@
 (function () {
+    var url_string = window.location.href;
+    var urlparams = new URL(url_string);
+    var src = urlparams.searchParams.get("src");
+    var split = 12;
+    var checkout = 'https://ev.braip.com/checkout/pla5kkgg/che2okzw?src=KD-' + src + '&split=' + split;
+    $(".link-pv").attr('href', checkout).attr('target', '_blank');
     $('.carousel-showmanymoveone .item').each(function () {
         var itemToClone = $(this);
 
