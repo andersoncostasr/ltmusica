@@ -355,6 +355,19 @@ footer{
     .espaco-depoimentos{
         margin-bottom: 620px !important;
     }
+    .fourth-block img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .last-block {
+        margin-bottom: 110px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 767px){
+    .footer-nav .labels {
+        left: 5px !important;
+    }
 }
 
 .bottom-bar{
