@@ -45,6 +45,10 @@ small{
     }
 }
 
+.espaco-depoimentos{
+    margin-bottom: 520px !important;
+}
+
 header{
     background: $blue;
     padding: 30px 0;
@@ -348,4 +352,77 @@ footer{
     .six-block h4 a{
         font-size: 20px;
     }
+    .espaco-depoimentos{
+        margin-bottom: 620px !important;
+    }
+}
+
+.bottom-bar{
+    background: $black;
+    height: 50px;
+    position:sticky;
+}
+
+.footer-nav {
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    .texto{
+        background: $red;
+        height: 20px;
+    }
+    p{
+        color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        margin-bottom: -10px;
+    }
+    .labels{
+        position: relative;
+        bottom: 20px;
+        left: 15px;
+        font-size: 11px;
+    }
+    .minutos{
+        left: 5px;
+    }
+    .segundos{
+        left: 5px;
+        position: relative;
+    }
+}
+.show, .footer-nav:hover {
+    display: block;
+}
+
+.btn-primary-sticky{
+    @extend .btn-primary;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.plus{
+    display: none !important;
+}
+
+.minus{
+    display: none !important;
+}
+
+.cancel{
+    display: none !important;
+}
+
+.name{
+    display: none !important;
 }
