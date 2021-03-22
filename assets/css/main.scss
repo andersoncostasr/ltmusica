@@ -250,7 +250,7 @@ header{
     
     .pg_bottom {
         font-size: 24px;
-        margin: 0;
+        margin: 0 0 15px 0;
     }
     .mark-red{
         background: $red;
@@ -330,4 +330,22 @@ footer{
         margin: 0;
     }
 
+}
+
+@media screen and (max-width: 767px){
+    header h1{
+        font-size: 24px;
+    }
+    header h2{
+        font-size: 18px;
+    }
+    .btn-primary{
+        padding: 20px 30px;
+    }
+    body, html{
+        overflow-x: hidden;
+    }
+    .six-block h4 a{
+        font-size: 20px;
+    }
 }

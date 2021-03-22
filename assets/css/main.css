@@ -243,7 +243,7 @@ header small, footer small, .fifth-block small {
 }
 .fifth-block .pg_bottom {
   font-size: 24px;
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 .fifth-block .mark-red {
   background: #ff7214;
@@ -314,6 +314,28 @@ footer img {
   color: #333333;
   font-size: 16px;
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  header h1, .fifth-block h1, footer h1 {
+    font-size: 24px;
+  }
+
+  header h2, .fifth-block h2, footer h2 {
+    font-size: 18px;
+  }
+
+  .btn-primary, .seven-block .btn-secondary {
+    padding: 20px 30px;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .six-block h4 a {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
