@@ -43,6 +43,64 @@ small {
   margin-bottom: 520px !important;
 }
 
+.img-full {
+  width: 100%;
+  height: auto;
+}
+
+progress {
+  text-align: center;
+  height: 2.5em;
+  width: 100%;
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+  background: #fff;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #ff7214;
+  box-shadow: 1px 1px 5px 3px rgba(255, 0, 0, 0.8);
+}
+
+progress:before {
+  content: attr(data-label);
+  font-size: 1.5em;
+  vertical-align: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #333333;
+  font-weight: bold;
+}
+
+.highlight {
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #fff 50%, #ff0 50%);
+  background-position: 0% 0;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.highlight.active {
+  animation-name: highlight;
+}
+
+@keyframes highlight {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
 header, footer, .fifth-block {
   background: #233d58;
   padding: 30px 0;
@@ -245,6 +303,9 @@ header small, footer small, .fifth-block small {
   font-size: 45px;
   margin: 0 !important;
 }
+.fifth-block .pg_top span {
+  font-size: 80px;
+}
 .fifth-block .pg_bottom {
   font-size: 24px;
   margin: 0 0 15px 0;
@@ -330,7 +391,7 @@ footer img {
   }
 
   .btn-primary, .btn-primary-sticky, .seven-block .btn-secondary {
-    padding: 20px 30px;
+    padding: 20px 15px;
   }
 
   body, html {

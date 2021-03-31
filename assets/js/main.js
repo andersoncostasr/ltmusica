@@ -4,7 +4,10 @@
     var src = urlparams.searchParams.get("src");
     var split = 12;
     var checkout = 'https://ev.braip.com/checkout/pla5kkgg/che2okzw?src=KD-' + src + '&split=' + split;
+    var checkout_perseguidor = 'https://ev.braip.com/checkout/pla5kkgg/che2okzw?src=KD-PERSEGUIDOR-' + src + '&split=' + split;
     $(".link-pv").attr('href', checkout).attr('target', '_blank');
+    $(".link-pv-perseguidor").attr('href', checkout_perseguidor).attr('target', '_blank');
+
 
     CookieTimer.start('countdown', '', 5 * 60);
 
@@ -63,4 +66,52 @@
         footer();
     });
 
+    // Contador
+    function setUpProgressBar(selector, startTime, endTime, update) {
+
+        var timer
+        var elem = document.querySelector(selector)
+        var max = endTime - startTime
+        elem.max = max
+
+        var setValue = function () {
+            var currentTime = new Date().getTime()
+            var ellasped = currentTime - startTime
+            if (ellasped >= max) {
+                ellasped = max
+                window.clearTimeout(timer)
+            }
+            elem.value = ellasped
+            var prec = ellasped / max * 100
+            elem.setAttribute("data-label", prec.toFixed(2) + '%')
+        }
+
+        setValue()
+        timer = window.setInterval(setValue, update)
+        return
+    }
+
+    var start1 = new Date()
+    start1.setMinutes(start1.getMinutes() - 30);
+    var end1 = new Date()
+    end1.setMinutes(end1.getMinutes() + 1);
+    setUpProgressBar("#pb1", start1.getTime(), end1.getTime(), 100)
+
+
+    // Hilight
+    $(window).on("scroll", function () {
+        highlight();
+    });
+
+    function highlight() {
+        var scroll = $(window).scrollTop();
+        var height = $(window).height();
+
+        $(".highlight").each(function () {
+            var pos = $(this).offset().top;
+            if (scroll + height >= pos) {
+                $(this).addClass("active");
+            }
+        });
+    }
 }());
