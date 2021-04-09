@@ -4,8 +4,10 @@
     var src = urlparams.searchParams.get("src");
     var split = 12;
     var checkout = 'https://ev.braip.com/checkout/pla5kkgg/che2okzw?src=KD-' + src + '&split=' + split;
+    var checkout_primeiro = 'https://ev.braip.com/checkout/pla5kkgg/che2okzw?src=KD-PRIMEIRO-' + src + '&split=' + split;
     var checkout_perseguidor = 'https://ev.braip.com/checkout/pla5kkgg/che2okzw?src=KD-PERSEGUIDOR-' + src + '&split=' + split;
     $(".link-pv").attr('href', checkout).attr('target', '_blank');
+    $(".link-pv-primeiro").attr('href', checkout_primeiro).attr('target', '_blank');
     $(".link-pv-perseguidor").attr('href', checkout_perseguidor).attr('target', '_blank');
 
 
@@ -28,6 +30,7 @@
                 .appendTo($(this));
         }
     });
+
     $(window).on("resize", function (e) {
         checkScreenSize();
     });
@@ -38,7 +41,7 @@
         var newWindowWidth = $(window).width();
         if (newWindowWidth < 767) {
             $('.carousel').carousel({
-                interval: 1000 * 3
+                interval: 1000 * 4
             });
         }
     }
@@ -90,12 +93,6 @@
         timer = window.setInterval(setValue, update)
         return
     }
-
-    // var start1 = new Date()
-    // start1.setMinutes(start1.getMinutes() - 10);
-    // var end1 = new Date()
-    // end1.setMinutes(end1.getMinutes() + 15);
-    // setUpProgressBar("#pb1", start1.getTime(), end1.getTime(), 1000)
 
     var start1 = new Date()
     start1.setMinutes(start1.getMinutes() - 50);
