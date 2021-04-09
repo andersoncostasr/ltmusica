@@ -91,11 +91,18 @@
         return
     }
 
+    // var start1 = new Date()
+    // start1.setMinutes(start1.getMinutes() - 10);
+    // var end1 = new Date()
+    // end1.setMinutes(end1.getMinutes() + 15);
+    // setUpProgressBar("#pb1", start1.getTime(), end1.getTime(), 1000)
+
     var start1 = new Date()
-    start1.setMinutes(start1.getMinutes() - 30);
+    start1.setMinutes(start1.getMinutes() - 50);
     var end1 = new Date()
-    end1.setMinutes(end1.getMinutes() + 1);
-    setUpProgressBar("#pb1", start1.getTime(), end1.getTime(), 100)
+    end1.setMinutes(end1.getMinutes() + 5);
+    setUpProgressBar("#pb1", start1.getTime(), end1.getTime(), 1000)
+
 
 
     // Hilight

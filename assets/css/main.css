@@ -490,4 +490,34 @@ footer img {
   display: none !important;
 }
 
+.val_total {
+  color: #fff !important;
+}
+
+.vl_pgto {
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.pg_top {
+  font-size: 45px;
+  margin: 0 !important;
+  color: #fff;
+}
+
+.pg_top span {
+  font-size: 80px;
+  color: #fff;
+}
+
+.pg_bottom {
+  font-size: 24px;
+  margin: 0 0 15px 0;
+  color: #fff;
+}
+
 /*# sourceMappingURL=main.css.map */
