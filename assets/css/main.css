@@ -20,6 +20,12 @@ small {
   max-width: 960px;
 }
 
+.bandeiras {
+  box-shadow: none;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+
 .btn-primary, .btn-primary-sticky, .seven-block .btn-secondary {
   font-size: 23px;
   background-color: #ff7214;
@@ -107,7 +113,8 @@ header, footer, .fifth-block {
 }
 header h1, footer h1, .fifth-block h1 {
   color: #fff;
-  margin-top: 0;
+  margin-top: -10px;
+  line-height: 35px;
 }
 header h1 .mark-red, footer h1 .mark-red, .fifth-block h1 .mark-red {
   background: #ff7214;

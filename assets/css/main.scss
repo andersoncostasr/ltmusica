@@ -27,6 +27,12 @@ small{
     max-width: 960px;
 }
 
+.bandeiras{
+    box-shadow: none;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
 .btn-primary{
     font-size: 23px;
     background-color: $red;
@@ -111,7 +117,8 @@ header{
     padding: 30px 0;
     h1{
         color: $white;
-        margin-top: 0;
+        margin-top: -10px;
+        line-height: 35px;
         .mark-red{
             background: $red;
             color: $white;
