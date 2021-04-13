@@ -3,11 +3,9 @@
     var urlparams = new URL(url_string);
     var src = urlparams.searchParams.get("src");
     var split = 12;
-    var checkout = 'https://ev.braip.com/checkout/pla5kkgg/che2okzw?src=KD-' + src + '&split=' + split;
-    var checkout_primeiro = 'https://ev.braip.com/checkout/pla5kkgg/che2okzw?src=KD-PRIMEIRO-' + src + '&split=' + split;
-    var checkout_perseguidor = 'https://ev.braip.com/checkout/pla5kkgg/che2okzw?src=KD-PERSEGUIDOR-' + src + '&split=' + split;
+    var checkout = 'https://pay.hotmart.com/Y51842790I?sck=KD-' + src + '&split=' + split;
+    var checkout_perseguidor = 'https://pay.hotmart.com/Y51842790I?sck=KD-PERSEGUIDOR-' + src + '&split=' + split;
     $(".link-pv").attr('href', checkout).attr('target', '_blank');
-    $(".link-pv-primeiro").attr('href', checkout_primeiro).attr('target', '_blank');
     $(".link-pv-perseguidor").attr('href', checkout_perseguidor).attr('target', '_blank');
 
 
